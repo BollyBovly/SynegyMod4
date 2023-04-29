@@ -7,12 +7,123 @@
     tools:context=".MainActivity">
 
     <TextView
+        android:id="@+id/textView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginTop="25dp"
+        android:text="Оформление железнодорожного билета"
+        android:textColor="#691FD0"
+        android:textSize="20sp"
+        android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
+    <LinearLayout
+        android:layout_width="380dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:padding="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/textView">
+
+        <EditText
+            android:id="@+id/nameId"
+            android:layout_width="350dp"
+            android:layout_height="50dp"
+            android:background="#AD73FF"
+            android:ems="10"
+            android:hint="Индентификатор пользователя"
+            android:paddingStart="15dp"
+            android:textColor="#691FD0"
+            android:textColorHint="#7D4BC4"
+            android:textSize="17sp" />
+
+        <EditText
+            android:id="@+id/departPoint"
+            android:layout_width="350dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="15dp"
+            android:background="#AD73FF"
+            android:ems="10"
+            android:hint="Место отправления поезда"
+            android:paddingStart="15dp"
+            android:textColor="#691FD0"
+            android:textColorHint="#7D4BC4"
+            android:textSize="17sp" />
+
+        <EditText
+            android:id="@+id/arrivePoint"
+            android:layout_width="350dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="15dp"
+            android:background="#AD73FF"
+            android:ems="10"
+            android:hint="Место прибытие поезда"
+            android:paddingStart="15dp"
+            android:textColor="#691FD0"
+            android:textColorHint="#7D4BC4"
+            android:textSize="17sp" />
+
+        <EditText
+            android:id="@+id/timeDepart"
+            android:layout_width="350dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="15dp"
+            android:background="#AD73FF"
+            android:ems="10"
+            android:hint="Время отправления поезда"
+            android:paddingStart="15dp"
+            android:textColor="#691FD0"
+            android:textColorHint="#7D4BC4"
+            android:textSize="17sp" />
+
+        <EditText
+            android:id="@+id/timeArrive"
+            android:layout_width="350dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="15dp"
+            android:background="#AD73FF"
+            android:ems="10"
+            android:hint="Время прибытие поезда"
+            android:paddingStart="15dp"
+            android:textColor="#691FD0"
+            android:textColorHint="#7D4BC4"
+            android:textSize="17sp" />
+
+        <TextView
+            android:id="@+id/ticketPrice"
+            android:layout_width="350dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="15dp"
+            android:background="#AD73FF"
+            android:ems="10"
+            android:gravity="center_vertical"
+            android:hint="Стоимость билета"
+            android:paddingStart="15dp"
+            android:textColor="#691FD0"
+            android:textColorHint="#7D4BC4"
+            android:textSize="17sp" />
+
+        <Button
+            android:id="@+id/button"
+            android:layout_width="350dp"
+            android:layout_height="60dp"
+            android:layout_marginTop="20dp"
+            android:ems="10"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:onClick="onClickTicket"
+            android:text="Оформить билет"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            android:backgroundTint="#844ED3"/>
+
+
+    </LinearLayout>
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
